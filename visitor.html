@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var total= prompt('총 입장인원을 입력해주세요.');
+        var col= prompt('한줄에 앉히고 싶은 인원을 입력하세요');
+        var row;
+
+        if(isNaN(total)===true || isNaN(col)===true){
+            alert('숫자를 입력해주세요');
+        } else{
+            if(total <= col){
+                alert('총인원수가 한줄에 앉힐 인원보다 크거나 같아야합니다.');
+            }   else{
+                    if(total % col === 0){    
+                        row= total / row; 
+                        alert('한 줄에 '+total+'명씩 앉힐경우 총 '+row+'줄이 필요합니다.');
+                    } else{
+                        row= parseInt(total/col)+1;
+                        alert('한 줄에 '+total+'명씩 앉힐경우 총 '+row+'줄이 필요합니다.');
+                      }
+                }
+        }
+    </script>
+</body>
+</html>

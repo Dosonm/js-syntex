@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= Number(prompt('a')); //대소비교 주의하기,, prompt로 받은 값은 기본적으로 문자열이지만
+                                    //산술연산에 사용할 경우 자동으로 숫자로 바뀌어 게산된다.하지만 대소비교는
+                                    //문자열끼리도 비교가 되기때문에 자동으로 바뀌지않음
+        var b= Number(prompt('b'));
+        switch(true){
+            case (a>b):alert('a가 b보다 크다');
+            break;
+            case (a<b):alert('a가 b보다 작다');
+            break;
+            default: alert('a와 b가 같다');
+        }
+    </script>
+</body>
+</html>
