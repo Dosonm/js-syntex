@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert('')
+        //confirm('')
+        var w1name=function(){
+         document.write('<br>'+'사용자1'+'<br>'); 
+        }
+        function w2name(){
+            document.write('사용자2'+'<br>')
+        }
+        var pp={
+            w3name:function(){
+                document.write('사용자3'+'<br>')
+            }
+        }
+        pp.w4name=function(){
+            document.write('사용자4'+'<br>')
+        }
+        var name = "사용자"
+        prompt('입력해줘','기본값'); //text필드창
+        document.write('이것은 무엇인가');
+        console.log(name+'님 환영합니다.');
+        w1name();
+        w2name();
+        pp.w3name();
+        pp.w4name();
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>입력한 숫자 중에 10보다 작은 숫자가 있는지 확인하겠습니다.</h1>
+    <script>
+        var n1 = prompt("첫번째 숫자를 입력하세요(50미만)");
+        var n2 = prompt("두번째 숫자를 입력하세요(50미만)");
+        
+        if(isNaN(n1)===true || isNaN(n2)===true){
+            alert('숫자를 입력해주세요');
+        } else{
+            if(n1>=50 || n2>=50){
+                alert('입력하신 숫자 중에 50이상인 숫자가 있습니다. 다시 입력해주세요')
+        }   else{
+                if(n1<10 || n2<10){
+                    alert('입력하신 숫자 중에 10보다 작은 수가 있습니다');
+        }       else{
+                    alert('입력하신 숫자에 10보다 작은 수는 없습니다');
+        }
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>%입력한 숫자가 3의 배수인지 알아보자%</h1>
+    <script>
+        var num = prompt('숫자를 입력해주세요');
+        
+        if(num===null){
+            alert('취소하였습니다.')
+        } else{
+            if(isNaN(num)===false){
+                if(num%3===0){
+                    document.write('입력하신 '+num+"은 3의 배수가 맞습니다.");
+        }       else{
+                    document.write('입력하신 '+num+'은 3의 배수가 아닙니다.');
+        }  
+        }
+        else{
+                alert('정수를 입력해주세요.');
+            }
+     }
+    </script>
+</body>
+</html>
