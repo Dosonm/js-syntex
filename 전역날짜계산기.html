@@ -2,14 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    
 </head>
 <body>
     <script>
-        var endday;
-        var thisday;
-        endday= prompt('전역날짜를 입력하시오(yyyy-mm-dd)','2023-10-19');
-        thisday= new date();
-        document.write(thisday);
+        let endday= new Date(prompt('전역날짜를 입력하시오(yyyy-mm-dd)','2023-9-27'));
+        let thisday= new Date();
+        let day = Math.floor((endday - thisday)/1000/60/60/24);
+        document.write(`남은 전역일자는 ${day}일 입니다.`);
     </script>
 </body>
 </html>
